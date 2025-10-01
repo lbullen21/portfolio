@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lauren Bullen - Portfolio",
+  title: "Lauren Peña - Portfolio",
   description: "Software Engineer - Frontend Focus",
 };
 

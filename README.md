@@ -1,4 +1,4 @@
-# Lauren Bullen - Portfolio
+# Lauren Pena - Portfolio
 
 A modern, responsive portfolio website built with Next.js and TypeScript, showcasing my work as a Software Engineer with a focus on frontend development.
 
