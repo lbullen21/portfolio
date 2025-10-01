@@ -50,7 +50,7 @@ const Navbar = () => {
               
               {/* Resume Download Button */}
               <a
-                href="/public/Lauren_Bullen_Resume_Front_End.pdf"
+                href="/Lauren_Bullen_Resume.pdf"
                 download="Lauren_Bullen_Resume.pdf"
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-200"
               >
@@ -127,7 +127,7 @@ const Navbar = () => {
           
           {/* Mobile Resume Button */}
           <a
-            href="/resume.pdf"
+            href="/Lauren_Bullen_Resume.pdf"
             download="Lauren_Bullen_Resume.pdf"
             className="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-white bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors duration-200"
           >
