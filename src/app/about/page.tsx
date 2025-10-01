@@ -14,7 +14,7 @@ export default function About() {
             
             <div className="prose prose-lg text-gray-700 dark:text-gray-300 max-w-none">
               <p className="mb-6">
-                Hi, I&apos;m Lauren Bullen, a passionate software engineer with a focus on 
+                Hi, I&apos;m Lauren Peña, a passionate software engineer with a focus on 
                 frontend development. I love creating beautiful and functional digital 
                 experiences using modern web technologies and have a keen eye for user-centered design.
               </p>
@@ -46,7 +46,7 @@ export default function About() {
                   <div className="w-full h-full overflow-hidden rounded-full relative">
                     <Image
                       src="/profile.jpeg"
-                      alt="Lauren Bullen"
+                      alt="Lauren Peña"
                       fill
                       className="object-cover"
                       sizes="320px"

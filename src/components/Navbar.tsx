@@ -27,7 +27,7 @@ const Navbar = () => {
           {/* Logo/Brand */}
           <Link href="/" className="flex-shrink-0">
             <span className="text-xl font-bold text-gray-900 dark:text-white">
-              Lauren Bullen
+              Lauren Peña
             </span>
           </Link>
 
