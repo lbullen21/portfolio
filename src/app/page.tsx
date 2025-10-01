@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { LocationSvg } from '../components/icons';
 
 export default function Home() {
   return (
@@ -20,10 +21,17 @@ export default function Home() {
                 Software Engineer - Frontend Web Developer
               </p>
               
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-10 max-w-lg">
-                I create beautiful, functional, and user-centered digital experiences 
-                using modern web technologies. Let&apos;s build something amazing together.
-              </p>
+              <div className="flex items-center justify-center lg:justify-start mb-10">
+                <div className="flex items-center space-x-3">
+                  <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center">
+                    <LocationSvg className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <div>
+                    <p className="text-lg font-medium text-gray-900 dark:text-white">Bend, Oregon</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">Available for remote work</p>
+                  </div>
+                </div>
+              </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
