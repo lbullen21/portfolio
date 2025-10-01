@@ -50,8 +50,8 @@ const Navbar = () => {
               
               {/* Resume Download Button */}
               <a
-                href="/Lauren_Bullen_Resume.pdf"
-                download="Lauren_Bullen_Resume.pdf"
+                href="/Lauren_Pena_Resume.pdf"
+                download="Lauren_Pena_Resume.pdf"
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-600 transition-colors duration-200"
               >
                 <svg
@@ -127,8 +127,8 @@ const Navbar = () => {
           
           {/* Mobile Resume Button */}
           <a
-            href="/Lauren_Bullen_Resume.pdf"
-            download="Lauren_Bullen_Resume.pdf"
+            href="/Lauren_Pena_Resume.pdf"
+            download="Lauren_Pena_Resume.pdf"
             className="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-white bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-600 transition-colors duration-200"
           >
             Download Resume
