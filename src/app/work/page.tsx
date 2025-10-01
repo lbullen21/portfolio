@@ -1,49 +1,4 @@
 export default function Work() {
-  const projects = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with Next.js, TypeScript, and Stripe integration. Features include user authentication, product management, and secure payments.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "PostgreSQL"],
-      imageUrl: "/project-placeholder.jpg",
-      demoUrl: "#",
-      codeUrl: "#",
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
-      imageUrl: "/project-placeholder.jpg",
-      demoUrl: "#",
-      codeUrl: "#",
-      featured: true,
-    },
-    {
-      id: 3,
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that displays current conditions and forecasts using external APIs with beautiful data visualizations.",
-      technologies: ["React", "Chart.js", "Weather API", "CSS Modules"],
-      imageUrl: "/project-placeholder.jpg",
-      demoUrl: "#",
-      codeUrl: "#",
-      featured: false,
-    },
-    {
-      id: 4,
-      title: "Portfolio Website",
-      description: "A personal portfolio website showcasing my work and skills, built with modern web technologies and optimized for performance.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-      imageUrl: "/project-placeholder.jpg",
-      demoUrl: "#",
-      codeUrl: "#",
-      featured: false,
-    },
-  ];
-
-  const featuredProjects = projects.filter(project => project.featured);
-  const otherProjects = projects.filter(project => !project.featured);
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -59,200 +14,157 @@ export default function Work() {
           </p>
         </div>
 
-        {/* Featured Projects */}
+        {/* Featured Project - Weather Dashboard */}
         <section className="mb-20">
-          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8">
-            Featured Projects
+          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8 text-center">
+            Featured Project
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            {featuredProjects.map((project, index) => (
-              <div
-                key={project.id}
-                className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 ${
-                  index === 0 ? 'md:col-span-2' : ''
-                }`}
-              >
-                {/* Project Image */}
-                <div className={`bg-gradient-to-br from-blue-400 to-purple-600 ${
-                  index === 0 ? 'h-64' : 'h-48'
-                } flex items-center justify-center`}>
-                  <div className="text-white text-center">
-                    <svg
-                      className="w-16 h-16 mx-auto mb-2"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                    </svg>
-                    <p className="text-sm opacity-75">Project Screenshot</p>
-                  </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              {/* Project Hero */}
+              <div className="bg-gradient-to-br from-sky-400 via-blue-500 to-indigo-600 h-64 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <svg
+                    className="w-20 h-20 mx-auto mb-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+                    />
+                  </svg>
+                  <h3 className="text-2xl font-bold">Weather Dashboard</h3>
+                  <p className="text-lg opacity-90">Real-time weather insights</p>
                 </div>
+              </div>
 
-                {/* Project Content */}
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                    {project.title}
+              {/* Project Content */}
+              <div className="p-8">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                    Weather Dashboard
                   </h3>
                   
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    {project.description}
+                  <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
+                    A responsive weather dashboard with location search using Google Maps Places API 
+                    and real-time weather data from OpenWeather API, featuring beautiful data 
+                    visualizations and forecasts.
                   </p>
+                </div>
 
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.technologies.map((tech) => (
+                {/* Key Features */}
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                    Key Features
+                  </h4>
+                  <ul className="grid md:grid-cols-2 gap-2 text-gray-600 dark:text-gray-400">
+                    <li className="flex items-center">
+                      <svg className="w-4 h-4 mr-2 text-sky-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Real-time weather data
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-4 h-4 mr-2 text-sky-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Location search
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-4 h-4 mr-2 text-sky-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Beautiful visualizations
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-4 h-4 mr-2 text-sky-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Responsive design
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Technologies */}
+                <div className="mb-8">
+                  <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+                    Technologies Used
+                  </h4>
+                  <div className="flex flex-wrap gap-3">
+                    {["Next.js", "TypeScript", "OpenWeather API", "Google Maps API"].map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 text-xs font-medium rounded-full"
+                        className="px-4 py-2 bg-sky-100 dark:bg-sky-900/30 text-sky-800 dark:text-sky-300 text-sm font-medium rounded-lg"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
-
-                  {/* Project Links */}
-                  <div className="flex space-x-4">
-                    <a
-                      href={project.demoUrl}
-                      className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-200"
-                    >
-                      <svg
-                        className="w-4 h-4 mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                      Live Demo
-                    </a>
-                    
-                    <a
-                      href={project.codeUrl}
-                      className="inline-flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 text-sm font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
-                    >
-                      <svg
-                        className="w-4 h-4 mr-2"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                      </svg>
-                      View Code
-                    </a>
-                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
 
-        {/* Other Projects */}
-        <section>
-          <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8">
-            Other Projects
-          </h2>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {otherProjects.map((project) => (
-              <div
-                key={project.id}
-                className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
-              >
-                {/* Project Image */}
-                <div className="bg-gradient-to-br from-green-400 to-blue-600 h-40 flex items-center justify-center">
-                  <div className="text-white text-center">
+                {/* Project Links */}
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="https://weather-dash-mauve.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-medium rounded-lg transition-colors duration-200"
+                  >
                     <svg
-                      className="w-12 h-12 mx-auto mb-2"
+                      className="w-5 h-5 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                    View Live Demo
+                  </a>
+                  
+                  <a
+                    href="https://github.com/lbullen21/weather-dash"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 font-medium rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                  >
+                    <svg
+                      className="w-5 h-5 mr-2"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
-                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                     </svg>
-                    <p className="text-xs opacity-75">Project Screenshot</p>
-                  </div>
-                </div>
-
-                {/* Project Content */}
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                    {project.title}
-                  </h3>
-                  
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">
-                    {project.description}
-                  </p>
-
-                  {/* Technologies */}
-                  <div className="flex flex-wrap gap-1 mb-3">
-                    {project.technologies.slice(0, 3).map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                    {project.technologies.length > 3 && (
-                      <span className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 text-xs rounded">
-                        +{project.technologies.length - 3}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Project Links */}
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      className="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium"
-                    >
-                      Demo
-                    </a>
-                    <a
-                      href={project.codeUrl}
-                      className="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300 text-sm font-medium"
-                    >
-                      Code
-                    </a>
-                  </div>
+                    View Source Code
+                  </a>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </section>
 
-        {/* Call to Action */}
-        <div className="text-center mt-16">
+        {/* Coming Soon Section */}
+        <div className="text-center">
           <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-            Interested in working together?
+            More Projects Coming Soon
           </h3>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
-            I&apos;m always open to discussing new opportunities and interesting projects.
+          <p className="text-gray-600 dark:text-gray-400 mb-8">
+            I&apos;m always working on new and exciting projects. Check back soon for more!
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors duration-200"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-cyan-500 hover:bg-cyan-600 transition-colors duration-200"
           >
             Get In Touch
-            <svg
-              className="w-4 h-4 ml-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
           </a>
         </div>
       </div>
