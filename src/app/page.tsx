@@ -17,7 +17,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-400 mb-8">
-                Software Engineer - Frontend Focus
+                Software Engineer - Frontend Web Developer
               </p>
               
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-10 max-w-lg">
@@ -56,142 +56,59 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Visual Element */}
+            {/* Geometric Design Section */}
             <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                {/* Main Circle */}
-                <div className="w-80 h-80 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-full flex items-center justify-center">
-                  <div className="w-72 h-72 bg-white dark:bg-gray-800 rounded-full flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                        <svg
-                          className="w-12 h-12 text-white"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                          />
-                        </svg>
-                      </div>
-                      <p className="text-gray-600 dark:text-gray-400 font-medium">
-                        Creative Developer
-                      </p>
-                    </div>
-                  </div>
+              <div className="relative w-80 h-80 flex items-center justify-center">
+                {/* Background circle */}
+                <div className="absolute w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full"></div>
+                
+                {/* Mountain/Triangle design inspired by logo */}
+                <div className="relative">
+                  <svg
+                    width="200"
+                    height="160"
+                    viewBox="0 0 200 160"
+                    className="drop-shadow-lg"
+                  >
+                    {/* Back mountain */}
+                    <path
+                      d="M20 140 L80 40 L140 140 Z"
+                      fill="url(#gradient1)"
+                      className="opacity-80"
+                    />
+                    
+                    {/* Front mountain */}
+                    <path
+                      d="M60 140 L120 20 L180 140 Z"
+                      fill="url(#gradient2)"
+                    />
+                    
+                    {/* Gradient definitions */}
+                    <defs>
+                      <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#8B5CF6" />
+                        <stop offset="100%" stopColor="#A78BFA" />
+                      </linearGradient>
+                      <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stopColor="#3B82F6" />
+                        <stop offset="100%" stopColor="#60A5FA" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
                 </div>
                 
-                {/* Floating Elements */}
-                <div className="absolute top-4 right-4 w-16 h-16 bg-yellow-400 rounded-lg opacity-80 animate-pulse"></div>
-                <div className="absolute bottom-8 left-4 w-12 h-12 bg-green-400 rounded-full opacity-60"></div>
-                <div className="absolute top-1/2 -right-6 w-8 h-8 bg-pink-400 rounded-full opacity-70"></div>
+                {/* Subtle decorative dots */}
+                <div className="absolute top-12 right-16 w-3 h-3 bg-blue-400 rounded-full opacity-60"></div>
+                <div className="absolute bottom-16 left-12 w-2 h-2 bg-purple-400 rounded-full opacity-40"></div>
+                <div className="absolute top-20 left-20 w-1.5 h-1.5 bg-indigo-400 rounded-full opacity-50"></div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Skills Preview */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-              What I Do
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              I specialize in creating end-to-end digital solutions with a focus on 
-              user experience and modern development practices.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Frontend Development */}
-            <div className="text-center p-6 bg-white dark:bg-gray-900 rounded-xl shadow-md">
-              <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-blue-600 dark:text-blue-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Frontend Development
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Creating responsive and interactive user interfaces using React, Next.js, 
-                and modern CSS frameworks.
-              </p>
-            </div>
-
-            {/* Backend Development */}
-            <div className="text-center p-6 bg-white dark:bg-gray-900 rounded-xl shadow-md">
-              <div className="w-16 h-16 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-green-600 dark:text-green-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                Backend Development
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Building scalable server-side applications and APIs using Node.js, 
-                Python, and various databases.
-              </p>
-            </div>
-
-            {/* UI/UX Design */}
-            <div className="text-center p-6 bg-white dark:bg-gray-900 rounded-xl shadow-md">
-              <div className="w-16 h-16 bg-purple-100 dark:bg-purple-900/30 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <svg
-                  className="w-8 h-8 text-purple-600 dark:text-purple-400"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"
-                  />
-                </svg>
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                UI/UX Design
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400">
-                Designing intuitive and accessible user experiences with a focus on 
-                usability and visual appeal.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Recent Work Preview */}
-      <section className="py-16">
+      <section className="py-16 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
