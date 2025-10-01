@@ -14,7 +14,7 @@ export default function Home() {
             <div className="text-center lg:text-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                 Hi, I&apos;m{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600/80 to-purple-600/80">
                   Lauren Peña
                 </span>
               </h1>
@@ -25,8 +25,8 @@ export default function Home() {
               
               <div className="flex items-center justify-center lg:justify-start mb-10">
                 <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-cyan-100 dark:bg-cyan-900/30 rounded-lg flex items-center justify-center">
-                    <LocationSvg className="w-5 h-5 text-cyan-500 dark:text-cyan-400" />
+                  <div className="w-10 h-10 bg-cyan-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
+                    <LocationSvg className="w-5 h-5 text-cyan-500/80 dark:text-cyan-400/80" />
                   </div>
                   <div>
                     <p className="text-lg font-medium text-gray-900 dark:text-white">Bend, Oregon</p>
@@ -39,7 +39,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
                   href="/work"
-                  className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-cyan-500 hover:bg-cyan-600 transition-colors duration-200"
+                  className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-cyan-500/80 hover:bg-cyan-600/80 transition-colors duration-200"
                 >
                   View My Work
                   <svg

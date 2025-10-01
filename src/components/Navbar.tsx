@@ -40,8 +40,8 @@ const Navbar = () => {
                   href={item.href}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                     isActive(item.href)
-                      ? 'text-cyan-600 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-900/20'
-                      : 'text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                      ? 'text-cyan-600/80 dark:text-cyan-400/80 bg-cyan-50/60 dark:bg-cyan-900/15'
+                      : 'text-gray-700 dark:text-gray-300 hover:text-cyan-600/80 dark:hover:text-cyan-400/80 hover:bg-gray-50 dark:hover:bg-gray-800'
                   }`}
                 >
                   {item.name}
@@ -52,7 +52,7 @@ const Navbar = () => {
               <a
                 href="/Lauren_Pena_Resume.pdf"
                 download="Lauren_Pena_Resume.pdf"
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-600 transition-colors duration-200"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-cyan-500/80 hover:bg-cyan-600/80 dark:bg-cyan-500/80 dark:hover:bg-cyan-600/80 transition-colors duration-200"
               >
                 <svg
                   className="w-4 h-4 mr-2"
@@ -77,7 +77,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-cyan-600/80 dark:hover:text-cyan-400/80 hover:bg-gray-50 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500/80"
               aria-controls="mobile-menu"
               aria-expanded="false"
               onClick={() => {
@@ -117,8 +117,8 @@ const Navbar = () => {
               href={item.href}
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                 isActive(item.href)
-                  ? 'text-cyan-600 dark:text-cyan-400 bg-cyan-50 dark:bg-cyan-900/20'
-                  : 'text-gray-700 dark:text-gray-300 hover:text-cyan-600 dark:hover:text-cyan-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                  ? 'text-cyan-600/80 dark:text-cyan-400/80 bg-cyan-50/60 dark:bg-cyan-900/15'
+                  : 'text-gray-700 dark:text-gray-300 hover:text-cyan-600/80 dark:hover:text-cyan-400/80 hover:bg-gray-50 dark:hover:bg-gray-800'
               }`}
             >
               {item.name}
@@ -129,7 +129,7 @@ const Navbar = () => {
           <a
             href="/Lauren_Pena_Resume.pdf"
             download="Lauren_Pena_Resume.pdf"
-            className="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-white bg-cyan-500 hover:bg-cyan-600 dark:bg-cyan-500 dark:hover:bg-cyan-600 transition-colors duration-200"
+            className="block w-full text-center px-3 py-2 rounded-md text-base font-medium text-white bg-cyan-500/80 hover:bg-cyan-600/80 dark:bg-cyan-500/80 dark:hover:bg-cyan-600/80 transition-colors duration-200"
           >
             Download Resume
           </a>

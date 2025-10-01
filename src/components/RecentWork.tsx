@@ -62,7 +62,7 @@ export default function RecentWork() {
                   href="https://weather-dash-mauve.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 bg-cyan-500 hover:bg-cyan-600 text-white text-sm font-medium rounded-lg transition-colors duration-200"
+                  className="inline-flex items-center px-4 py-2 bg-cyan-500/80 hover:bg-cyan-600/80 text-white text-sm font-medium rounded-lg transition-colors duration-200"
                 >
                   <svg
                     className="w-4 h-4 mr-2"
@@ -103,7 +103,7 @@ export default function RecentWork() {
         <div className="text-center">
           <Link
             href="/work"
-            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-cyan-500 hover:bg-cyan-600 transition-colors duration-200"
+            className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-cyan-500/80 hover:bg-cyan-600/80 transition-colors duration-200"
           >
             View All Projects
             <svg

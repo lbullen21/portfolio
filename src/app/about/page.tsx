@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
           {/* Content Section */}
           <div className="mb-12 lg:mb-0">
             <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">
@@ -32,17 +32,14 @@ export default function About() {
                 When I&apos;m not coding, you can find me exploring and enjoying the great outdoors of Bend, Oregon.
               </p>
             </div>
-
-            <SkillsSection />
-        
           </div>
 
           {/* Visual Section */}
-          <div className="flex justify-center">
+          <div className="flex justify-center lg:justify-center">
             <div className="relative">
               <div className="text-center">
                 {/* Gradient border circle around image */}
-                <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 p-2">
+                <div className="w-80 h-80 bg-gradient-to-br from-blue-400/70 to-purple-600/70 rounded-full flex items-center justify-center mx-auto mb-4 p-2">
                   <div className="w-full h-full overflow-hidden rounded-full relative">
                     <Image
                       src="/profile.jpeg"
@@ -56,6 +53,11 @@ export default function About() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Skills Section - moved outside the grid */}
+        <div className="mt-12">
+          <SkillsSection />
         </div>
       </div>
     </div>

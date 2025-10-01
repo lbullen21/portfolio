@@ -2,7 +2,7 @@ interface GitHubSvgProps {
   className?: string;
 }
 
-export default function GitHubSvg({ className = "w-6 h-6 text-blue-600 dark:text-blue-400" }: GitHubSvgProps) {
+export default function GitHubSvg({ className = "w-6 h-6 text-blue-600/80 dark:text-blue-400/80" }: GitHubSvgProps) {
   return (
     <svg
       className={className}

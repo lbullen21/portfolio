@@ -3,7 +3,7 @@ export default function GeometricDesign() {
     <div className="hidden lg:flex justify-center lg:justify-end">
       <div className="relative w-80 h-80 flex items-center justify-center">
         {/* Background circle */}
-        <div className="absolute w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/20 dark:to-purple-900/20 rounded-full"></div>
+        <div className="absolute w-full h-full bg-gradient-to-br from-blue-100/60 to-purple-100/60 dark:from-blue-900/15 dark:to-purple-900/15 rounded-full"></div>
         
         {/* Mountain/Triangle design inspired by logo */}
         <div className="relative">
@@ -41,8 +41,8 @@ export default function GeometricDesign() {
         </div>
         
         {/* Subtle decorative dots */}
-        <div className="absolute top-12 right-16 w-3 h-3 bg-blue-400 rounded-full opacity-60"></div>
-        <div className="absolute bottom-16 left-12 w-2 h-2 bg-purple-400 rounded-full opacity-40"></div>
+        <div className="absolute top-12 right-16 w-3 h-3 bg-blue-400/60 rounded-full opacity-60"></div>
+        <div className="absolute bottom-16 left-12 w-2 h-2 bg-purple-400/60 rounded-full opacity-40"></div>
         <div className="absolute top-20 left-20 w-1.5 h-1.5 bg-indigo-400 rounded-full opacity-50"></div>
       </div>
     </div>

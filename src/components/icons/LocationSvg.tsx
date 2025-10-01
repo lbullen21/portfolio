@@ -2,7 +2,7 @@ interface LocationSvgProps {
   className?: string;
 }
 
-export default function LocationSvg({ className = "w-6 h-6 text-blue-600 dark:text-blue-400" }: LocationSvgProps) {
+export default function LocationSvg({ className = "w-6 h-6 text-blue-600/80 dark:text-blue-400/80" }: LocationSvgProps) {
   return (
     <svg
       className={className}

@@ -2,7 +2,7 @@ interface LinkedInSvgProps {
   className?: string;
 }
 
-export default function LinkedInSvg({ className = "w-6 h-6 text-blue-600 dark:text-blue-400" }: LinkedInSvgProps) {
+export default function LinkedInSvg({ className = "w-6 h-6 text-blue-600/80 dark:text-blue-400/80" }: LinkedInSvgProps) {
   return (
     <svg
       className={className}

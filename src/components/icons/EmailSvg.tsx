@@ -2,7 +2,7 @@ interface EmailSvgProps {
   className?: string;
 }
 
-export default function EmailSvg({ className = "w-6 h-6 text-blue-600 dark:text-blue-400" }: EmailSvgProps) {
+export default function EmailSvg({ className = "w-6 h-6 text-blue-600/80 dark:text-blue-400/80" }: EmailSvgProps) {
   return (
     <svg
       className={className}
