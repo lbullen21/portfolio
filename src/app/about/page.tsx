@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
@@ -61,29 +63,19 @@ export default function About() {
           </div>
 
           {/* Visual Section */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center">
             <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl flex items-center justify-center">
-                <div className="w-72 h-72 bg-white dark:bg-gray-800 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <svg
-                        className="w-12 h-12 text-white"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                        />
-                      </svg>
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-400 font-medium">
-                      Lauren Bullen
-                    </p>
+              <div className="text-center">
+                {/* Gradient border circle around image */}
+                <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 p-2">
+                  <div className="w-full h-full overflow-hidden rounded-full relative">
+                    <Image
+                      src="/profile.jpeg"
+                      alt="Lauren Bullen"
+                      fill
+                      className="object-cover"
+                      sizes="320px"
+                    />
                   </div>
                 </div>
               </div>
