@@ -5,7 +5,7 @@ export default function GeometricDesign() {
         {/* Background circle */}
         <div className="absolute w-full h-full bg-gradient-to-br from-blue-100/60 to-purple-100/60 dark:from-blue-900/15 dark:to-purple-900/15 rounded-full"></div>
         
-        {/* Mountain/Triangle design inspired by logo */}
+        {/* Mountain/Triangle design */}
         <div className="relative">
           <svg
             width="200"
