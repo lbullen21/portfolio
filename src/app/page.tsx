@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LocationSvg } from '../components/icons';
+import { LocationSvg, EmailSvg, LinkedInSvg, GitHubSvg } from '../components/icons';
 import GeometricDesign from '../components/GeometricDesign';
 import RecentWork from '../components/RecentWork';
 
@@ -8,10 +8,10 @@ export default function Home() {
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Content */}
-            <div className="text-center lg:text-left">
+            <div className="text-left lg:text-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                 Hi, I&apos;m{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
@@ -23,20 +23,72 @@ export default function Home() {
                 Software Engineer - Frontend Web Developer
               </p>
               
-              <div className="flex items-center justify-center lg:justify-start mb-10">
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-cyan-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
-                    <LocationSvg className="w-5 h-5 text-cyan-500/80 dark:text-cyan-400/80" />
+              <div className="flex items-start justify-start lg:justify-start mb-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {/* Location */}
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-blue-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
+                      <LocationSvg className="w-5 h-5 text-blue-500/80 dark:text-cyan-400/80" />
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium text-gray-900 dark:text-white">Bend, Oregon</p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">Available for remote work</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-lg font-medium text-gray-900 dark:text-white">Bend, Oregon</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Available for remote work</p>
+
+                  {/* Email */}
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-blue-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
+                      <EmailSvg className="w-5 h-5 text-blue-500/80 dark:text-cyan-400/80" />
+                    </div>
+                    <div>
+                      <a 
+                        href="mailto:lauren.e.bullen@gmail.com"
+                        className="text-sm font-medium text-gray-900 dark:text-white hover:text-cyan-600/80 dark:hover:text-cyan-400/80 transition-colors duration-200"
+                      >
+                        lauren.e.bullen@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* LinkedIn */}
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-blue-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
+                      <LinkedInSvg className="w-5 h-5 text-blue-500/80 dark:text-cyan-400/80" />
+                    </div>
+                    <div>
+                      <a 
+                        href="https://linkedin.com/in/lauren-bullen"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-gray-900 dark:text-white hover:text-cyan-600/80 dark:hover:text-cyan-400/80 transition-colors duration-200"
+                      >
+                        linkedin.com/in/lauren-bullen
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* GitHub */}
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-blue-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
+                      <GitHubSvg className="w-5 h-5 text-blue-500/80 dark:text-cyan-400/80" />
+                    </div>
+                    <div>
+                      <a 
+                        href="https://github.com/lbullen21"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-gray-900 dark:text-white hover:text-cyan-600/80 dark:hover:text-cyan-400/80 transition-colors duration-200"
+                      >
+                        github.com/lbullen21
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-start lg:justify-start">
                 <Link
                   href="/work"
                   className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-cyan-500/80 hover:bg-cyan-600/80 transition-colors duration-200"

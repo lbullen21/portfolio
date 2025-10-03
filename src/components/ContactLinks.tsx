@@ -14,8 +14,8 @@ export default function ContactLinks() {
             {/* Email */}
             <div className="flex items-center space-x-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-cyan-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
-                  <EmailSvg />
+                <div className="w-12 h-12 bg-blue-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
+                  <EmailSvg className="w-6 h-6 text-blue-500/80 dark:text-cyan-400/80" />
                 </div>
               </div>
               <div>
@@ -32,8 +32,8 @@ export default function ContactLinks() {
             {/* LinkedIn */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-cyan-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
-                  <LinkedInSvg />
+                <div className="w-12 h-12 bg-blue-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
+                  <LinkedInSvg className="w-6 h-6 text-blue-500/80 dark:text-cyan-400/80" />
                 </div>
               </div>
               <div>
@@ -52,8 +52,8 @@ export default function ContactLinks() {
             {/* GitHub */}
             <div className="flex items-start space-x-4">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 bg-cyan-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
-                  <GitHubSvg />
+                <div className="w-12 h-12 bg-blue-100/60 dark:bg-cyan-900/20 rounded-lg flex items-center justify-center">
+                  <GitHubSvg className="w-6 h-6 text-blue-500/80 dark:text-cyan-400/80" />
                 </div>
               </div>
               <div>

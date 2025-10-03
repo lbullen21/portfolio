@@ -3,12 +3,12 @@ import {
   SiTypescript, 
   SiReact, 
   SiNextdotjs, 
-  SiNodedotjs, 
   SiPhp, 
   SiCss3, 
   SiTailwindcss, 
   SiGit 
 } from 'react-icons/si';
+import { PiCpuFill } from 'react-icons/pi';
 
 export default function SkillsSection() {
   const skills = [
@@ -16,7 +16,7 @@ export default function SkillsSection() {
     { name: 'TypeScript', icon: SiTypescript },
     { name: 'React', icon: SiReact },
     { name: 'Next.js', icon: SiNextdotjs },
-    { name: 'Node.js', icon: SiNodedotjs },
+    { name: 'AI', icon: PiCpuFill },
     { name: 'PHP/Laravel', icon: SiPhp },
     { name: 'CSS/SCSS', icon: SiCss3 },
     { name: 'Tailwind CSS', icon: SiTailwindcss },
@@ -35,7 +35,7 @@ export default function SkillsSection() {
           return (
             <div
               key={skill.name}
-              className="bg-gray-100 dark:bg-gray-800 px-3 py-2 rounded-lg text-center text-sm font-medium text-gray-800 dark:text-gray-200 flex flex-col items-center gap-2"
+              className="bg-gray-100 dark:bg-gray-800 py-3 rounded-lg text-center text-sm font-medium text-gray-800 dark:text-gray-200 flex flex-col items-center gap-2"
             >
               <IconComponent className="text-xl text-gray-900 dark:text-white" />
               <span>{skill.name}</span>
