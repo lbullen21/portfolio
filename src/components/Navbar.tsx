@@ -115,6 +115,15 @@ const Navbar = () => {
             <Link
               key={item.name}
               href={item.href}
+              onClick={() => {
+                // Add a small delay to allow navigation to start before closing menu
+                setTimeout(() => {
+                  const menu = document.getElementById('mobile-menu');
+                  if (menu) {
+                    menu.classList.add('hidden');
+                  }
+                }, 200);
+              }}
               className={`block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 ${
                 isActive(item.href)
                   ? 'text-cyan-600/80 dark:text-cyan-400/80 bg-cyan-50/60 dark:bg-cyan-900/15'
