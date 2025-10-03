@@ -1,0 +1,21 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#A78BFA" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="url(#gradient1)" opacity="0.2"/>
+  
+  <!-- Back mountain -->
+  <path d="M4 28 L13 8 L22 28 Z" fill="url(#gradient1)" opacity="0.8"/>
+  
+  <!-- Front mountain -->
+  <path d="M10 28 L19 4 L28 28 Z" fill="url(#gradient2)"/>
+</svg>
