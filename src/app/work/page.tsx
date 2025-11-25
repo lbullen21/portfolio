@@ -206,6 +206,18 @@ export default function Work() {
                       </svg>
                       Itinerary planning
                     </li>
+                    <li className="flex items-center">
+                      <svg className="w-4 h-4 mr-2 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Data persistence with MongoDB
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-4 h-4 mr-2 text-emerald-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      Real-time trip updates
+                    </li>
                   </ul>
                 </div>
 
@@ -215,7 +227,7 @@ export default function Work() {
                     Technologies Used
                   </h4>
                   <div className="flex flex-wrap gap-3">
-                    {["Next.js", "TypeScript"].map((tech) => (
+                    {["Next.js", "TypeScript", "MongoDB", "Mongoose"].map((tech) => (
                       <span
                         key={tech}
                         className="px-4 py-2 bg-emerald-100/60 dark:bg-emerald-900/30 text-emerald-800/80 dark:text-emerald-300 text-sm font-medium rounded-lg"
