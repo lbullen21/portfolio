@@ -50,7 +50,7 @@ const Navbar = () => {
               
               {/* Resume Button */}
               <a
-                href="/Lauren_Peña_CV.pdf"
+                href="/LP_CV.pdf"
                 download
                 className="ml-4 bg-cyan-500/80 hover:bg-cyan-600/80 dark:bg-cyan-500/80 dark:hover:bg-cyan-600/80 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
