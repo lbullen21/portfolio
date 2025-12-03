@@ -3,18 +3,7 @@ export default function Work() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Header */}
-        <div className="text-left lg:text-center mb-8 md:mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            My Work
-          </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl lg:mx-auto">
-            Here are some of the projects I&apos;ve worked on. Each project represents 
-            a unique challenge and an opportunity to learn and grow as a developer.
-          </p>
-        </div>
-
-                {/* Featured Project - Weather Dashboard */}
+      {/* Featured Projects */}
         <section className="mb-20">
           <h2 className="text-3xl font-semibold text-gray-900 dark:text-white mb-8 text-left lg:text-center">
             Featured Projects
