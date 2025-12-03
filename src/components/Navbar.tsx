@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   const navItems = [
-    { name: 'Projects', href: '/projects' },
+    { name: 'Projects', href: '/work' },
   ];
 
   return (
