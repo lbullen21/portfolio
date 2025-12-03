@@ -21,7 +21,7 @@ export default function Home() {
               </h1>
               
               <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                Frontend developer creating intuitive web applications with modern technologies
+                Software Engineer | Frontend Web Developer 
               </h2>
 
               {/* Contact Information Grid */}
