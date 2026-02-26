@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { LocationSvg, EmailSvg, LinkedInSvg, GitHubSvg } from "@/components/icons";
-import GeometricDesign from "@/components/GeometricDesign";
 import SkillsSection from "@/components/SkillsSection";
 import ProfilePic from "@/components/ProfilePic";
 
